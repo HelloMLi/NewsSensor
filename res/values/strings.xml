@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+<string name="hello">Hello World, NewsSensorActivity!</string>
+
+<string name="app_name">时事探针</string>
+ <string name="action_settings">博客地址</string>
+ <string name="hello_world">Hello world!</string>
+
+<string name="topic">热点名词</string>
+
+<string name="hotperson">热点人物</string>
+
+<string name="hottopic">网络话题</string>
+
+<string name="hotarea">全球热门地点</string>
+
+<string name="search">查询</string>
+
+<string name="focus">我的关注</string>
+
+<string name="hotprovince">国内热门省份</string>
+
+<string name="hotcity">国内热门城市</string>
+
+<string name="hotcountry">国内热门区县</string>
+
+<string name="keywords">关键字：</string>
+
+<string name="relativetopic">相关话题：</string>
+
+<string name="input">输入你要查询的内容</string>
+
+<string name="btsearch">查询</string>
+
+<string name="NewsSensor">时事探针</string>
+
+<string name="note">已取消关注的话题</string>
+
+<string name="tip">请选择感兴趣的词进行过滤</string>
+
+<string name="addgz">加关注</string>
+
+<string name="nettopic">网络话题</string>
+
+<string name="hotn">热点名词</string>
+
+<string name="hotperson">热点人物</string>
+
+<string name="hotarea">热门地点</string>
+
+<string name="hotorg">热门机构</string>
+
+<string name="wshottopic">热门话题</string>
+</resources>

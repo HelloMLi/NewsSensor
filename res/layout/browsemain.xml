@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lj="http://schemas.android.com/apk/res/lj.com.main"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+    <lj.com.view.SlidingMenu
+         android:id="@+id/id_menu" 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         lj:rightPadding="100dp"
+         >
+       <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:orientation="horizontal" 
+         android:background="#FFFFFF">
+           <include layout="@layout/left_menu"/>
+           <LinearLayout 
+                android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:id="@+id/layout"
+               >
+          <RelativeLayout 
+               android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center_vertical"
+                     android:background="#1E90FF"     
+              >
+              
+               <Button 
+            android:onClick="toggleMenu"
+            android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="选择分析图类型"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="5dp"
+                 android:background="@drawable/topbtnshape"
+                 android:textColor="#FFFFFF"/>
+                   
+              
+                    <Button 
+                android:id="@+id/foc"
+                 android:layout_marginTop="10dp"
+                 android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+                android:background="@drawable/toprightbtnshape"
+                android:textColor="#FFFFFF"
+                android:text="加关注"
+                 android:layout_marginRight="5dp"
+              
+        />
+             
+          </RelativeLayout>    
+                  
+           
+        <TextView 
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="18dp"
+                   android:textColor="#030303"
+                 android:gravity="center"
+            
+            />
+        <TextView 
+                  android:layout_width="fill_parent"
+                 android:layout_height="6dp"
+               
+                  
+                 />
+        <TableLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+            <TableRow 
+                 android:layout_height="wrap_content"
+                  android:gravity="center" >
+                <TextView 
+                 android:id="@+id/totalreport"
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#32CD32"
+                 android:text="0"
+                 android:layout_weight="1"
+                  android:gravity="center"
+                  android:textSize="13dp"
+                 />
+             
+              <TextView 
+                 android:id="@+id/posreport"
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#436EEE"
+                 android:text="0"
+                 android:layout_weight="1"
+                  android:gravity="center"
+                   android:textSize="13dp"
+                 />
+               <TextView 
+                 android:id="@+id/negreport"
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#CD0000"
+                 android:text="0"
+                 android:layout_weight="1"
+                  android:textSize="13dp"
+                  android:gravity="center"
+                 />
+                <TextView 
+                 android:id="@+id/score"
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#DAA520"
+                 android:text="0"
+                 android:layout_weight="1"
+                  android:textSize="13dp"
+                  android:gravity="center"
+                 />
+                 <TextView 
+                 android:id="@+id/haosou"
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#DAA520"
+                 android:text="0"
+                 android:layout_weight="1"
+                  android:textSize="13dp"
+                  android:gravity="center"
+                 />
+                
+            </TableRow>
+            <TableRow 
+                 android:layout_height="wrap_content"
+     			android:gravity="center" >
+                 <TextView 
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+               android:text="报道总数"
+               android:textSize="10dp"
+                 android:textColor="#030303"
+                 android:layout_weight="1"
+                android:gravity="center"
+                 />
+             
+              <TextView 
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="正面报道"
+                 android:layout_weight="1"
+                  android:textSize="10dp"
+                    android:textColor="#030303"
+                   android:gravity="center"
+                 />
+               <TextView 
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="负面报道"
+                 android:layout_weight="1"
+                   android:textColor="#030303"
+                  android:textSize="10dp"
+                   android:gravity="center"
+                 />
+                <TextView 
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+				android:text="倾向性评分"    
+				android:layout_weight="1"
+				  android:textColor="#030303"
+				 android:textSize="10dp"   
+				  android:gravity="center"          />
+                 <TextView 
+                  android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="互联网搜索次数"
+                 android:layout_weight="1"
+                   android:textColor="#030303"
+                  android:textSize="10dp"
+                   android:gravity="center"
+                 />
+            </TableRow>
+        </TableLayout>
+        
+        
+         <TextView 
+                  android:layout_width="fill_parent"
+                 android:layout_height="10dp"
+               
+      
+                 />
+       
+        <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center_horizontal"
+            >
+          
+             <Button 
+                android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="时间降序"
+            android:id="@+id/timedesc"
+            android:textSize="15dp"
+            android:background="@drawable/shape1"
+             
+                />
+              <Button 
+                android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="时间升序"
+            android:id="@+id/timeasc"
+             android:textSize="15dp"
+            android:background="@drawable/shape1"
+             
+                />
+              
+                <Button 
+                android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="最大匹配"
+             android:textSize="15dp"
+            android:id="@+id/bestmatch"
+            android:background="@drawable/shape1"
+           
+                />
+        </LinearLayout>
+       
+             
+          <TextView 
+              android:id="@+id/pagenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             android:textColor="#1E90FF"
+              />
+            <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="10dp"
+                     />
+         <LinearLayout 
+             android:id="@+id/lsv"
+              android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+             >
+              <ListView 
+                android:id="@+id/detlv"
+                android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:divider="#D3D3D3"
+               android:footerDividersEnabled="true" 
+               android:headerDividersEnabled="true" 
+               android:dividerHeight="3px"
+                ></ListView>
+         </LinearLayout> 
+         
+       
+           </LinearLayout>
+           
+          
+           
+       </LinearLayout>
+    </lj.com.view.SlidingMenu >
+    
+
+</RelativeLayout>

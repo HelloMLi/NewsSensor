@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:id="@+id/ivpic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+         />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivpic"
+        android:layout_margin="2dp"
+        android:text="热点网络话题"
+        android:textColor="#000000"       
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/keyw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ivpic"
+        android:textColor="#292929"
+         android:layout_margin="2dp"
+        android:text="议题  今日  聚焦  看点  搜狐  保驾  月  会要  时间  视频  相关  附  全文  财税  护  前瞻  暗示  武警 独家 "
+       
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/reltopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="5dp"
+        android:layout_alignBottom="@+id/ivpic"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:maxLines="4"
+        android:textColor="#292929"
+        android:text="十八届五中全会 五中全会召开  十八届五中全会召开"
+        android:textSize="13dp" />
+
+</RelativeLayout>

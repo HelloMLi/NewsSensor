@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/myfocusbg"
+     android:background="@drawable/bg"
+    android:orientation="vertical" >
+   <LinearLayout 
+        android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+       >
+       <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的关注"
+           />
+       
+       <Button 
+            android:alpha="0"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1.0"
+           
+           />
+        <Button 
+        android:id="@+id/focusnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:text="@string/note"
+        />
+        
+   </LinearLayout>
+   <TextView 
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="小提示：下拉刷新更新我的关注"
+         android:textSize="10dp"
+       />
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+         android:id="@+id/pull_to_refresh_gridview_myfocus"
+        android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:divider="#D3D3D3"
+           android:dividerHeight="3px"
+           android:numColumns="2"
+        />
+   
+        
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainpage"
+        android:text="首页" 
+        android:textColor="#000000"
+       android:background="#FFFFFF"
+        android:layout_weight="1"
+        />
+       <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:id="@+id/sc"
+        android:background="#FFFFFF"
+         android:textColor="#000000"
+          android:layout_weight="1"
+         />
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的" 
+         android:id="@+id/mine"
+         android:textColor="#000000"
+          android:layout_weight="1"
+          android:background="#FFFFFF"
+        />
+         <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置" 
+         android:id="@+id/setting"
+         android:textColor="#000000"
+         android:background="#FFFFFF"
+          android:layout_weight="1"
+        />
+       
+</LinearLayout>

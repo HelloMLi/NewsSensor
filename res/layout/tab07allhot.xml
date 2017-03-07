@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+  <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_to_refresh_listview_allhot"
+        android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:divider="#D3D3D3"
+           android:dividerHeight="3px"
+          android:layout_below="@+id/horizontalScrollView"
+        />
+
+</LinearLayout>
